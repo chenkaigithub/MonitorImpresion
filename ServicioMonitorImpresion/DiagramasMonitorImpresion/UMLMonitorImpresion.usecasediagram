@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="eb690b04-8d96-48ae-93e7-058b8084ac88" name="UMLEjemplo" linkedPackageId="3a7ffca1-c111-46bc-9c74-ee947011ddac" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3cd949bc-7232-47f2-a744-78dd25f54c85" name="SistemaArchivos" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3a54320-9922-4b0b-87a0-fc34b6917975" />
+        <targetEnds>
+          <association Id="aaee5391-a79b-4b08-a7f1-e361addda566" isDerived="false" sourceEndRoleName="SistemaArchivos" targetEndRoleName="Backup FicheroSpool" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f0842e60-66ef-4c3c-a0c3-ead44ba336b9" LastKnownName="Backup FicheroSpool" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64660ac5-0664-4feb-bca9-9add694bb757" name="SistemaArchivos" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e64374c2-693d-4ff1-b062-2f19af76e89f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59806dd3-12b1-494f-b271-6ae3ad1b794a" name="Backup FicheroSpool" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c08f1db9-86a0-4195-ab67-080f68cade80" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fba27113-ee61-4a7e-b287-a7aecf8695b0" />
+          </association>
+          <association Id="aa86076d-51c9-424a-9e1d-d8e6bf3654b9" isDerived="false" sourceEndRoleName="SistemaArchivos" targetEndRoleName="Análisis EMF" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c884c90d-0771-461d-bb8c-9245e3c39396" LastKnownName="Análisis Fichero Spool" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4361dafd-afa1-4866-a023-e157e060fbab" name="SistemaArchivos" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1d7c07f7-7963-4d35-ab7c-52cea1b9840c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0fc0ada-26a5-44c0-8750-76fc34046f27" name="Análisis EMF" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="78eed027-82bf-4072-bb9b-b47348855e7c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="72be22ad-fdef-4279-b1e6-89de8de8b6d6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0ce951ec-cf2a-4560-a711-6fcdac59f021" name="SistemaImpresion" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="219a4c96-4d9d-4414-8e94-265b356541bc" />
+        <targetEnds>
+          <association Id="2f471376-1b34-473a-9c4b-ed4dc2cd0e7f" isDerived="false" sourceEndRoleName="SistemaImpresion" targetEndRoleName="Analizar Trabajo Impresión" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="02c0018f-53ba-4ae1-9c77-22fd8628711e" LastKnownName="Analizar Trabajo Impresión" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="513852a4-73a0-4246-a8b3-b712498da979" name="SistemaImpresion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="178ee10b-eab0-4215-acf5-31fb27c54b06" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="376440e9-9e43-4205-bbca-22ac37d8817f" name="Analizar Trabajo Impresión" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6782fb95-571d-4a5c-b123-6d8195b5c0a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="61414059-74be-4c6a-94c5-007f02e95074" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="247c6534-a69a-4399-89f7-f93d01848412" name="Suscripción Eventos S.Archivos" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="299d72cc-f05e-46e7-95d3-921dd6d66fbe" />
+        <targetEnds>
+          <association Id="e4bf32c9-e3a6-471c-b0a5-32190132878c" isDerived="false" sourceEndRoleName="Suscripción Eventos S.Archivos" targetEndRoleName="SistemaArchivos" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="3cd949bc-7232-47f2-a744-78dd25f54c85" LastKnownName="SistemaArchivos" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8bed0f9-2e12-46a0-a5c8-be8c4d4624bb" name="Suscripción Eventos S.Archivos" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="043a3905-b8df-4a3e-914b-7b881e6f728d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0317150c-7fcc-4ad8-a8f3-c75fb4a01d8c" name="SistemaArchivos" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab1b6784-614b-461a-b132-c3bc2bf35b53" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="24c0c327-25e7-4dd2-abc6-e5de35777f69" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0842e60-66ef-4c3c-a0c3-ead44ba336b9" name="Backup FicheroSpool" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="be838c14-0747-4817-ae60-a25729960680" />
+        <suppliersInternal>
+          <dependency Id="a384bf7b-1491-4b41-8dca-af4fa3eca991">
+            <useCaseMoniker Id="247c6534-a69a-4399-89f7-f93d01848412" LastKnownName="Suscripción Eventos S.Archivos" />
+            <elementDefinition Id="af85bd89-4e88-44b2-a3d8-c05092443f21" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="da314efe-5bb2-4710-a6c0-21ee013fd5ae" name="Registrar Actividad" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70d60bea-26f6-426f-984d-e5330ce6afea" />
+        <targetEnds>
+          <association Id="942be892-0b3b-48ad-a233-1adc7a23c792" isDerived="false" sourceEndRoleName="Guardar log" targetEndRoleName="SistemaArchivos" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="3cd949bc-7232-47f2-a744-78dd25f54c85" LastKnownName="SistemaArchivos" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1370cd6b-e16f-477c-9871-446d10a760e8" name="Guardar log" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c33cd366-8925-45fc-bd9c-72fee5e463ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1bed85b-0535-4a9b-a12c-080337e038a0" name="SistemaArchivos" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0dbdd76d-c49c-4d7e-932f-9b224f67c761" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d5a2e662-9f7e-4175-87e7-c0f615983b91" />
+          </association>
+          <association Id="516f35ea-c42c-481d-9303-32e031e267d6" isDerived="false" sourceEndRoleName="Registrar Actividad" targetEndRoleName="Desarrollador" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="01345612-c86b-4e97-8217-29eb2ac80c07" LastKnownName="Desarrollador" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66f83174-90a7-4b00-85f1-84f9effcfaeb" name="Registrar Actividad" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b0367b05-8f06-4fbe-9ab0-5f12f9714d73" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="589ad7b2-7e89-465c-b630-0fefa6ee18b5" name="Desarrollador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="874cae51-b9c5-4ae9-870d-47137c44b9af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="391ff5ae-6726-44f7-b323-6a70388a7d8a" />
+          </association>
+          <association Id="4fb31d6f-bda6-489f-aadd-601d6aedb72b" isDerived="false" sourceEndRoleName="Registrar Actividad" targetEndRoleName="Operador" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="29df3b16-46d5-49ab-aeca-0485aa4195a7" LastKnownName="Operador" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4aa6a861-69b3-49ca-baf2-bfa4752ac772" name="Registrar Actividad" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e57b3f4-33d1-4fb6-a11f-a76de9381083" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a9674bd0-3730-4bb0-91f1-4344666c2a9c" name="Operador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="61b66ba8-07b8-4ff7-9342-c8af0432306e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="44a3f1f8-1c29-4354-ac8c-7802c92e7740" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e31da45d-7f31-4e0b-bf4a-2b7f5c771665" name="Servicio Eventos Sistema" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2671c9cc-91db-4775-8716-2fd94f2491e2" />
+        <targetEnds>
+          <association Id="6aba85bb-e04b-408e-9ead-8ba627355edc" isDerived="false" sourceEndRoleName="Servicio Eventos Sistema" targetEndRoleName="Analizar Evento Impresión" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7894dbc7-1446-44ae-bd1f-c6bdf0fbebf1" LastKnownName="Capturar Evento Impresión" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="40417f49-4f56-4e91-b3b8-d6453262d4bf" name="Servicio Eventos Sistema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="705753ef-85b9-4428-9408-035fe0a10fc5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54777758-a639-407b-b46e-99c06164ef16" name="Analizar Evento Impresión" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cdfadabe-4912-4a6d-a42a-570f44fd7785" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a930d964-d3a3-4474-88e4-da69e0c68c54" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="68ddd462-e1cd-49f4-bdba-17f452b423ff" name="Suscripción Eventos Impresión" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="372b5431-fe89-4643-a2c7-b3a621972162" />
+        <targetEnds>
+          <association Id="91b34041-80cb-469e-a60c-432d4e23ecac" isDerived="false" sourceEndRoleName="Suscripción Eventos Impresión" targetEndRoleName="Servicio Eventos Sistema" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="e31da45d-7f31-4e0b-bf4a-2b7f5c771665" LastKnownName="Servicio Eventos Sistema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5d54551-e36d-4754-ac95-22e5f4e25686" name="Suscripción Eventos Impresión" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="25c42182-a9ef-4289-a360-9591e4419e9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="665fdd49-0612-4d27-b34e-1a05acb0622f" name="Servicio Eventos Sistema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="97f12fa9-6a68-43e1-9a73-98b995069aa1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="71ec8c51-b108-4bbd-a51a-fa9b98ff45ef" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7894dbc7-1446-44ae-bd1f-c6bdf0fbebf1" name="Capturar Evento Impresión" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0a46d10-952c-4045-b1a8-859cded820f3" />
+        <suppliersInternal>
+          <dependency Id="7e8aabfd-e3fb-4150-8e41-0050ba1463d3">
+            <useCaseMoniker Id="68ddd462-e1cd-49f4-bdba-17f452b423ff" LastKnownName="Suscripción Eventos Impresión" />
+            <elementDefinition Id="820dc614-edd1-41cb-a7ce-9a2098749327" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="03b32dbf-8fdd-47ef-b06d-b5f6bdb5482e">
+            <useCaseMoniker Id="02c0018f-53ba-4ae1-9c77-22fd8628711e" LastKnownName="Analizar Trabajo Impresión" />
+            <elementDefinition Id="c3ee0e9c-e760-4df4-81f0-7dd2292175c8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7fdf95a0-cecc-4bb5-9d2d-a8d43b2649f6" name="Obtener Trabajo Impresión API" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2e0367c-fd0e-41ed-8e64-7f4d170a7e94" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="02c0018f-53ba-4ae1-9c77-22fd8628711e" name="Analizar Trabajo Impresión" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1628367c-9552-4420-a3d8-5457ac4fd2ef" />
+        <additions>
+          <include Id="81896ada-8f2b-4f71-b53d-256fd43cd20b">
+            <useCaseMoniker Id="b1388342-8fda-4fb8-9e37-76435fe3c21a" LastKnownName="Guardar Trabajo Impresión" />
+            <elementDefinition Id="3719600f-90a9-4c13-858d-facd3dc3a7ee" />
+          </include>
+          <include Id="d2604ce0-cf88-4628-922c-820203be4a2c">
+            <useCaseMoniker Id="7fdf95a0-cecc-4bb5-9d2d-a8d43b2649f6" LastKnownName="Obtener Trabajo Impresión API" />
+            <elementDefinition Id="317c2580-6cc3-4c39-b907-06d2966a03a3" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b1388342-8fda-4fb8-9e37-76435fe3c21a" name="Guardar Trabajo Impresión" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0dc61eb0-5553-4f6f-864d-5a333de10a59" />
+        <targetEnds>
+          <association Id="d154b8c7-15fc-4515-9643-055b7b5692a5" isDerived="false" sourceEndRoleName="Guardar Trabajo Impresión" targetEndRoleName="Servicio CAD" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="395bc1e2-09e0-46be-ac35-cc68d651b50a" LastKnownName="S.G.B.D" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b85f4374-089c-4a1b-bf16-ad26af7c8f18" name="Guardar Trabajo Impresión" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="07fefa1f-c076-4392-b9df-c1ed28d62e60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60121db7-1ce5-48d3-a2f4-e52de6e03a08" name="Servicio CAD" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="63f8148f-13fa-4e70-a0c0-62478e501120" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8ba4b981-d15d-4866-bae7-6ec7c4222a36" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="395bc1e2-09e0-46be-ac35-cc68d651b50a" name="S.G.B.D" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83baf98a-fd1b-4342-9e0d-5a3723c71056" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c884c90d-0771-461d-bb8c-9245e3c39396" name="Análisis Fichero Spool" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2bc46885-b923-4a5a-be1a-dcf3362d3a3b" />
+        <extendedCases>
+          <extend Id="a92896b9-24a1-4d5d-b106-d164e6561fce">
+            <useCaseMoniker Id="02c0018f-53ba-4ae1-9c77-22fd8628711e" LastKnownName="Analizar Trabajo Impresión" />
+            <elementDefinition Id="75bfe5f1-44fd-42f4-a86e-599e6a7297d5" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="01345612-c86b-4e97-8217-29eb2ac80c07" name="Desarrollador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a1545712-5fa8-4003-94e4-135ade34c248" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="29df3b16-46d5-49ab-aeca-0485aa4195a7" name="Operador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af115be6-64b6-4b3f-86fa-0b634b46610e" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3a7ffca1-c111-46bc-9c74-ee947011ddac" name="DiagramasMonitorImpresion">
+    <elementDefinition Id="f3b9003c-6a09-4fa8-bb60-ec3e12a90c65" />
+    <profileInstances>
+      <packageHasProfileInstances Id="df6d72b3-ac7e-46fe-8353-d270abfb12fe">
+        <profileInstance Id="7494a418-cbc2-4ac4-b9ff-d5f0b561c92d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1bc14332-980a-435a-a8be-d4d21e328a47">
+        <profileInstance Id="785c5380-5cfd-48bd-b685-1722eb2eb3ea" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
