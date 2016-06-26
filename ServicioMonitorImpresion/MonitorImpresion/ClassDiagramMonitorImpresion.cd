@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MonitorTrabajosImpresion.EventMonitorPrinting" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAABAgAAAAQAAAAAgAgCAAAAAAAQECACg=</HashCode>
+      <FileName>EventMonitorPrinting.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AnalizeJobId" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.AnalizeJobId" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.75" />
+    <AssociationLine Name="ApiImpresion" Type="MonitorTrabajosImpresion.ApiImpresion" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="4.813" />
+        <Point X="6.479" Y="4.813" />
+        <Point X="6.479" Y="6" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAQAYEAAAAAAAgSAQAAIBQAAQgQAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>AnalizeJobId.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ApiImpresion" />
+      <Property Name="EmfSpool" />
+      <Property Name="JPLSpool" />
+      <Property Name="LocalPrinting" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.Spool" Collapsed="true">
+    <Position X="8.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAACEAhAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.EmfSpool" Collapsed="true">
+    <Position X="7.25" Y="6" Width="1.25" />
+    <InheritanceLine Type="MonitorTrabajosImpresion.Spool" FixedToPoint="true">
+      <Path>
+        <Point X="9.5" Y="7.75" />
+        <Point X="9.5" Y="7.066" />
+        <Point X="7.875" Y="7.066" />
+        <Point X="7.875" Y="6.691" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CAAAQAAAAAAgAAAAAAAAAAACAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EmfSpool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.JPLSpool" Collapsed="true">
+    <Position X="8.75" Y="6" Width="1.25" />
+    <InheritanceLine Type="MonitorTrabajosImpresion.Spool" FixedToPoint="true">
+      <Path>
+        <Point X="9.5" Y="7.75" />
+        <Point X="9.5" Y="7.066" />
+        <Point X="9.25" Y="7.066" />
+        <Point X="9.25" Y="6.691" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="PCLXLSpool" Type="MonitorTrabajosImpresion.PCLXLSpool" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="10" Y="6.312" />
+        <Point X="10.25" Y="6.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.225" Y="0.407" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAIABAQAQAAAAAQAACgAgAEAAAgAAAAABAAAI=</HashCode>
+      <FileName>JPLSpool.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PCLXLSpool" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.PCLXLSpool" Collapsed="true">
+    <Position X="10.25" Y="6" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAQAAAAAAAACAAgAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>PCLXLSpool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.ApiImpresion" Collapsed="true">
+    <Position X="5.75" Y="6" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAAAAAAAAAAAIAAIAAAiAQkAAAAAAAAAAKAAAAA=</HashCode>
+      <FileName>ApiImpresion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.LocalPrinting" Collapsed="true">
+    <Position X="4.25" Y="6" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEAAAAAAEAAAAAAAAAAgAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LocalPrinting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.Programa" Collapsed="true">
+    <Position X="8.5" Y="2.25" Width="1.5" />
+    <AssociationLine Name="ServicePrintMonitor" Type="MonitorTrabajosImpresion.ServicePrintMonitor">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.185" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ServicePrintMonitor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.ServicePrintMonitor" Collapsed="true">
+    <Position X="8.25" Y="1" Width="2" />
+    <AssociationLine Name="EventMonitorPrinting" Type="MonitorTrabajosImpresion.EventMonitorPrinting" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="1.312" />
+        <Point X="7.797" Y="1.312" />
+        <Point X="7.797" Y="3.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAUACAAAACAAgAAAAAAEAAAQAAAAA=</HashCode>
+      <FileName>ServicePrintMonitor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EventMonitorPrinting" />
+      <Property Name="WatchIO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MonitorTrabajosImpresion.WatchIO" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAACAEAAACgAACAAAAAAAAACAAA=</HashCode>
+      <FileName>WatchIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

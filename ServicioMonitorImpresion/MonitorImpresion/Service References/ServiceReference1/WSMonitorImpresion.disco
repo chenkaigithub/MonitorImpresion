@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://imprentadesa.ual.es/WSMonitorImpresion.asmx?wsdl" docRef="http://imprentadesa.ual.es/WSMonitorImpresion.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://imprentadesa.ual.es/WSMonitorImpresion.asmx" xmlns:q1="http://imprentadesa.ual.es/" binding="q1:WSMonitorImpresionSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://imprentadesa.ual.es/WSMonitorImpresion.asmx" xmlns:q2="http://imprentadesa.ual.es/" binding="q2:WSMonitorImpresionSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
